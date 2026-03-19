@@ -27,8 +27,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.01em;
 }
-.logo-atom,
-.logo-fitness,
 h1, h2, h3, h4, h5, h6,
 .section-title,
 .hero-title,
@@ -217,31 +215,14 @@ a { text-decoration: none; color: inherit; }
 
 /* Logo */
 .logo {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
-  gap: 0;
+  display: inline-flex;
+  align-items: center;
+  width: 155px;
 }
-.logo-atom {
-  font-size: 2.2rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  color: var(--white);
-  position: relative;
-}
-.logo-atom::after {
-  content: '';
-  display: block;
-  height: 2px;
-  background: var(--secondary);
-  margin-top: 2px;
-}
-.logo-fitness {
-  font-size: 1.1rem;
-  font-weight: 500;
-  letter-spacing: 0.22em;
-  color: var(--white);
-  margin-top: 2px;
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 /* Nav links */
@@ -1124,16 +1105,16 @@ a { text-decoration: none; color: inherit; }
   gap: 10px;
 }
 
-.footer-links h5,
-.footer-contact h5,
-.footer-social h5 {
+.footer .footer-links h5,
+.footer .footer-contact h5,
+.footer .footer-social h5 {
   font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0;
   text-transform: none;
   margin-bottom: 10px;
-  color: var(--white);
+  color: var(--secondary) !important;
 }
 
 .footer-links a,
@@ -1254,8 +1235,7 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 860px) {
   .nav-inner { height: 78px; padding: 0 20px; }
   .logo { margin-left: 0 !important; }
-  .logo-atom { font-size: 1.7rem; }
-  .logo-fitness { font-size: 0.88rem; }
+  .logo { width: 120px; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
   .nav-actions .btn-whatsapp { display: none; }
