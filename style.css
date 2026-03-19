@@ -1262,6 +1262,14 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 600px) {
   .container { padding: 0 16px; }
   .section-title { font-size: 38px; line-height: 40px; }
+  .section-programs .section-title {
+    font-size: 34px;
+    line-height: 36px;
+  }
+  .section-programs .heading-line {
+    white-space: normal;
+    word-break: break-word;
+  }
   .hero-content { padding: 0 16px; }
   .section-hero {
     height: calc(100vh - 78px);
