@@ -1242,6 +1242,10 @@ a { text-decoration: none; color: inherit; }
   .nav-actions .btn-primary { display: none; }
   .about-grid { grid-template-columns: 1fr; gap: 24px; }
   .about-text { max-width: 100%; }
+  .section-about .heading-line { white-space: normal; }
+  .section-about .section-title { word-break: break-word; }
+  .check-list strong,
+  .check-list p { overflow-wrap: anywhere; }
   .img-grid-4 img:nth-child(1),
   .img-grid-4 img:nth-child(2),
   .img-grid-4 img:nth-child(3),
@@ -1272,13 +1276,14 @@ a { text-decoration: none; color: inherit; }
     font-size: 44px;
     line-height: 46px;
   }
+  .section-about .heading-line { white-space: normal; }
   .img-grid-4 {
     grid-template-columns: 1fr;
     gap: 12px;
   }
   .img-grid-4 img { aspect-ratio: 4/3; }
   .programs-grid { grid-template-columns: 1fr; }
-  .gallery-grid { grid-template-columns: 1fr 1fr; }
+  .gallery-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr; }
   .why-card { padding: 28px 20px; }
   .testimonial-card { padding: 32px 24px; }
