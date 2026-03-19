@@ -1262,6 +1262,12 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 600px) {
   .container { padding: 0 16px; }
   .section-title { font-size: 38px; line-height: 40px; }
+  .hero-sub br { display: none; }
+  .hero-title {
+    font-size: 2.35rem;
+    line-height: 1.05;
+  }
+  .hero-title .accent { white-space: nowrap; }
   .section-programs .section-title {
     font-size: 30px;
     line-height: 32px;
