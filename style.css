@@ -1242,8 +1242,8 @@ a { text-decoration: none; color: inherit; }
   .nav-actions .btn-primary { display: none; }
   .about-grid { grid-template-columns: 1fr; gap: 24px; }
   .about-text { max-width: 100%; }
-  .section-about .heading-line { white-space: normal; }
-  .section-about .section-title { word-break: break-word; }
+  .section-about .heading-line { white-space: nowrap; }
+  .section-about .section-title { word-break: normal; }
   .check-list strong,
   .check-list p { overflow-wrap: anywhere; }
   .img-grid-4 img:nth-child(1),
@@ -1263,12 +1263,12 @@ a { text-decoration: none; color: inherit; }
   .container { padding: 0 16px; }
   .section-title { font-size: 38px; line-height: 40px; }
   .section-programs .section-title {
-    font-size: 34px;
-    line-height: 36px;
+    font-size: 30px;
+    line-height: 32px;
   }
   .section-programs .heading-line {
-    white-space: normal;
-    word-break: break-word;
+    white-space: nowrap;
+    word-break: normal;
   }
   .hero-content { padding: 0 16px; }
   .section-hero {
@@ -1281,10 +1281,10 @@ a { text-decoration: none; color: inherit; }
   .hero-sub { font-size: 1.05rem; }
   .hero-sub { margin-bottom: 22px; }
   .section-about .section-title {
-    font-size: 44px;
-    line-height: 46px;
+    font-size: 34px;
+    line-height: 36px;
   }
-  .section-about .heading-line { white-space: normal; }
+  .section-about .heading-line { white-space: nowrap; }
   .img-grid-4 {
     grid-template-columns: 1fr;
     gap: 12px;
