@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Atom Fitness – The Best Gym in Madipakkam, Chennai</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/Logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <header id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-atom">ATOM</span>
+        <span class="logo-fitness">FITNESS</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#programs">Programs</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/919360424768" class="btn-whatsapp" target="_blank" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <a href="#contact" class="btn-primary">Book Your Appointment</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#programs">Programs</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       SECTION 1 — HERO
+  ============================================================ -->
+  <section id="home" class="section-hero">
+    <div class="hero-video-wrap">
+      <video autoplay muted loop playsinline poster="assets/Section 4/Image.jpg">
+        <source src="assets/Hero Video.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="hero-title animate-up">
+        THE BEST GYM IN<br />
+        <span class="accent">MADIPAKKAM, CHENNAI</span>
+      </h1>
+      <p class="hero-sub animate-up delay-1">
+        World-class equipment, certified trainers &amp;<br />
+        AC-cooled training floors for men and women.
+      </p>
+      <a href="#contact" class="btn-primary animate-up delay-2">Book a Free Trial Session</a>
+    </div>
+
+    <!-- Floating CTA buttons -->
+    <a href="tel:+919360424768" class="float-btn float-left" aria-label="Call">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    </a>
+    <a href="https://wa.me/919360424768" class="float-btn float-right" aria-label="WhatsApp" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+  </section>
+
+  <!-- ============================================================
+       SECTION 2 — TICKER / MARQUEE
+  ============================================================ -->
+  <section class="section-ticker">
+    <div class="ticker-track">
+      <div class="ticker-inner">
+        <span>500+ ACTIVE MEMBERS</span>
+        <span>CERTIFIED PERSONAL TRAINERS</span>
+        <span>AC-EQUIPPED TRAINING FLOORS</span>
+        <span>3+ YEARS SERVING MADIPAKKAM</span>
+        <span>UNISEX FACILITY</span>
+        <span>500+ ACTIVE MEMBERS</span>
+        <span>CERTIFIED PERSONAL TRAINERS</span>
+        <span>AC-EQUIPPED TRAINING FLOORS</span>
+        <span>3+ YEARS SERVING MADIPAKKAM</span>
+        <span>UNISEX FACILITY</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 3 — ABOUT / BUILT FOR YOU
+  ============================================================ -->
+  <section id="about" class="section-about section-pad">
+    <div class="container about-grid">
+      <div class="about-images reveal">
+        <div class="img-grid-4">
+          <img src="assets/Section 3/Image 1.jpg" alt="Training floor" loading="lazy" />
+          <img src="assets/Section 3/Image 2.jpg" alt="Weight rack" loading="lazy" />
+          <img src="assets/Section 3/Image 3.jpg" alt="Machines" loading="lazy" />
+          <img src="assets/Section 3/Image 4.jpg" alt="Turf zone" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="about-text reveal delay-1">
+        <h2 class="section-title">
+          <span class="heading-line">BUILT FOR <span class="accent">MADIPAKKAM</span>.</span>
+          <span class="heading-line">BUILT FOR <span class="accent">YOU</span>.</span>
+        </h2>
+        <p class="body-text">
+          Atom Fitness was founded with one goal: to bring premium, no-nonsense fitness to the heart of Madipakkam. We offer a clean, fully equipped space where beginners, athletes, and everyone in between can train without limits.
+        </p>
+        <ul class="check-list">
+          <li>
+            <span class="check-icon">
+              <img src="assets/checkbox.png" alt="Check icon" width="20" height="20" />
+            </span>
+            <div>
+              <strong>Equipment That Doesn't Let You Down</strong>
+              <p>Premium machines, free weights, and functional zones — everything you need to train without compromise.</p>
+            </div>
+          </li>
+          <li>
+            <span class="check-icon">
+              <img src="assets/checkbox.png" alt="Check icon" width="20" height="20" />
+            </span>
+            <div>
+              <strong>Coaches Who Actually Coach</strong>
+              <p>Our trainers don't just count reps. They build programs, fix form, and keep you accountable from day one.</p>
+            </div>
+          </li>
+          <li>
+            <span class="check-icon">
+              <img src="assets/checkbox.png" alt="Check icon" width="20" height="20" />
+            </span>
+            <div>
+              <strong>A Community That Shows Up</strong>
+              <p>When the people around you are consistent, you become consistent. Atom Fitness attracts members who are serious about results.</p>
+            </div>
+          </li>
+        </ul>
+        <a href="#gallery" class="btn-primary mt-24 about-btn">See Our Facility</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4 — PROGRAMS
+  ============================================================ -->
+  <section id="programs" class="section-programs section-pad">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="heading-line">EVERY GOAL HAS <span class="accent">A PROGRAM</span>.</span>
+        <span class="heading-line">YOURS DOES TOO.</span>
+      </h2>
+
+      <div class="programs-grid reveal">
+        <div class="program-card">
+          <div class="program-img">
+            <img src="assets/Section 4/Image.jpg" alt="Muscle Building" loading="lazy" />
+            <div class="card-hover-line"></div>
+          </div>
+          <h3>MUSCLE BUILDING</h3>
+          <p>Free weights, machines, progressive overload programming.</p>
+        </div>
+
+        <div class="program-card">
+          <div class="program-img">
+            <img src="assets/Section 4/Image-1.jpg" alt="Cardio Training" loading="lazy" />
+            <div class="card-hover-line"></div>
+          </div>
+          <h3>CARDIO TRAINING</h3>
+          <p>Treadmills, ellipticals, spin bikes, and guided cardio sessions.</p>
+        </div>
+
+        <div class="program-card accent-card">
+          <div class="program-img">
+            <img src="assets/Section 4/Image-2.jpg" alt="Weight Loss" loading="lazy" />
+            <div class="card-hover-line"></div>
+          </div>
+          <h3 class="accent">WEIGHT LOSS PROGRAMS</h3>
+          <p>Structured plans combining HIIT, diet guidance, and tracking.</p>
+        </div>
+
+        <div class="program-card">
+          <div class="program-img">
+            <img src="assets/Section 4/Image-3.jpg" alt="Personal Training" loading="lazy" />
+            <div class="card-hover-line"></div>
+          </div>
+          <h3>PERSONAL TRAINING</h3>
+          <p>1-on-1 sessions with certified trainers. Results in 30 days.</p>
+        </div>
+
+        <div class="program-card">
+          <div class="program-img">
+            <img src="assets/Section 4/Image-4.jpg" alt="Functional Fitness" loading="lazy" />
+            <div class="card-hover-line"></div>
+          </div>
+          <h3>FUNCTIONAL FITNESS</h3>
+          <p>Compound movements, kettlebells, and body control workouts.</p>
+        </div>
+
+        <div class="program-card">
+          <div class="program-img">
+            <img src="assets/Section 4/Image-5.jpg" alt="Zumba & Aerobics" loading="lazy" />
+            <div class="card-hover-line"></div>
+          </div>
+          <h3>ZUMBA &amp; AEROBICS</h3>
+          <p>High-energy group classes for ladies and mixed batches.</p>
+        </div>
+      </div>
+
+      <div class="center mt-48 reveal">
+        <a href="#contact" class="btn-primary">Explore All Programs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 5 — WHY CHOOSE ATOM FITNESS
+  ============================================================ -->
+  <section class="section-why section-pad">
+    <div class="container">
+      <h2 class="section-title reveal">
+        WHY CHOOSE <span class="accent">ATOM FITNESS</span>
+      </h2>
+
+      <div class="why-grid reveal">
+        <div class="why-card">
+          <div class="why-icon">
+            <img src="assets/Section 5/Yellow/Icon 1.png" alt="Fully Air-Conditioned icon" width="36" height="36" />
+          </div>
+          <h4>FULLY AIR-CONDITIONED</h4>
+          <p>Train comfortably even in Chennai summers.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <img src="assets/Section 5/Yellow/Icon 2.png" alt="Ladies Section icon" width="36" height="36" />
+          </div>
+          <h4>SEPARATE LADIES SECTION</h4>
+          <p>Dedicated space for women with female trainers on request.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <img src="assets/Section 5/Yellow/Icon 3.png" alt="Affordable plans icon" width="36" height="36" />
+          </div>
+          <h4>AFFORDABLE PLANS</h4>
+          <p>Memberships starting at rates that fit every budget.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <img src="assets/Section 5/Yellow/Icon 4.png" alt="Certified trainers icon" width="36" height="36" />
+          </div>
+          <h4>CERTIFIED TRAINERS</h4>
+          <p>Every trainer holds a recognised fitness certification.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <img src="assets/Section 5/Yellow/Icon 5.png" alt="Flexible timings icon" width="36" height="36" />
+          </div>
+          <h4>FLEXIBLE TIMINGS</h4>
+          <p>Early morning to late evening batches available.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <img src="assets/Section 5/Yellow/Icon 6.png" alt="Modern equipment icon" width="36" height="36" />
+          </div>
+          <h4>MODERN EQUIPMENT</h4>
+          <p>Regularly maintained free weights, machines, and cardio gear.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 6 — TESTIMONIALS
+  ============================================================ -->
+  <section class="section-testimonials section-pad">
+    <div class="container">
+      <h2 class="section-title center reveal">
+        <span class="accent">REAL RESULTS</span> FROM <span class="accent">REAL MEMBERS</span>
+      </h2>
+      <p class="sub-center reveal">Real reviews from real members who train with us every day.</p>
+
+      <div class="testimonial-slider reveal">
+        <div class="testimonial-track" id="testimonialTrack">
+
+          <div class="testimonial-card">
+            <p class="review-text">"I have been working out here for the past one month, and I'm very happy with my decision. The gym is clean, equipment is modern and well maintained, and the trainers guide you properly with correct form and workout plans. The atmosphere is positive and motivating. Great place to start your fitness journey!"</p>
+            <div class="reviewer">
+              <strong>Dhinahar P</strong>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="review-text">"Best gym in Madipakkam without a doubt. The AC facility makes such a difference during Chennai summers. Trainers are knowledgeable and the equipment is top-notch. Highly recommend to anyone serious about fitness."</p>
+            <div class="reviewer">
+              <strong>Priya R</strong>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="review-text">"Joined Atom Fitness 3 months ago and the transformation has been incredible. The personal training sessions are worth every rupee. The coaches really push you to your limits in the best possible way."</p>
+            <div class="reviewer">
+              <strong>Karthik M</strong>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn" id="prevBtn" aria-label="Previous">&#8249;</button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-btn" id="nextBtn" aria-label="Next">&#8250;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 7 — GALLERY
+  ============================================================ -->
+  <section id="gallery" class="section-gallery section-pad">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="accent">STEP INSIDE</span> ATOM FITNESS
+      </h2>
+      <p class="body-text reveal" style="max-width:600px;">Label images: Training Floor, Cardio Zone, Free Weights Area, Ladies Section, Changing Rooms</p>
+
+      <div class="gallery-grid reveal">
+        <div class="gallery-item">
+          <img src="assets/Section 7/Image 1.jpg" alt="Cardio Zone" loading="lazy" />
+          <div class="gallery-label">Cardio Zone</div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/Section 7/Image 2.jpg" alt="Training Floor" loading="lazy" />
+          <div class="gallery-label">Training Floor</div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/Section 7/Image 3.jpg" alt="Free Weights Area" loading="lazy" />
+          <div class="gallery-label">Free Weights Area</div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/Section 7/Image 4.jpg" alt="Machines" loading="lazy" />
+          <div class="gallery-label">Machines</div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/Section 7/Image 5.jpg" alt="Ladies Section" loading="lazy" />
+          <div class="gallery-label">Ladies Section</div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/Section 7/Image 6.jpg" alt="Main Floor" loading="lazy" />
+          <div class="gallery-label">Main Floor</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 8 — FAQ
+  ============================================================ -->
+  <section id="faq" class="section-faq section-pad">
+    <div class="container faq-wrap">
+      <div class="faq-left reveal">
+        <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+        <p class="body-text">Everything you need to know about starting your Atom Fitness journey with us. Can't find what you're looking for? Contact us directly.</p>
+      </div>
+
+      <div class="faq-right reveal delay-1">
+        <div class="faq-item">
+          <button class="faq-question">Where is Atom Fitness located? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>33/4, Madipakkam Koot Road, Medavakkam Main Rd, Madipakkam, Chennai, Tamil Nadu 600091.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">What are your gym timings? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Mon–Sat: 5:30 AM – 10:00 PM | Sunday: 6:00 AM – 1:00 PM</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Is there a separate section for ladies? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Yes! We have a dedicated ladies section with female trainers available on request.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">What is the gym membership fee in Madipakkam? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>We offer flexible plans to fit every budget. Contact us directly for the latest pricing and offers.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Do you offer personal training? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Yes, 1-on-1 personal training sessions with certified trainers are available. Results guaranteed within 30 days.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can I try before I join? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Absolutely! Book a free trial session and experience Atom Fitness before committing to a membership.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 9 — MAP / LOCATION
+  ============================================================ -->
+  <section class="section-map section-pad">
+    <div class="container map-grid">
+      <div class="map-embed reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.906456789!2d80.2009!3d12.9586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d8498c10001%3A0x1!2sAtom+Fitness+Madipakkam!5e0!3m2!1sen!2sin!4v1234567890"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Atom Fitness Location">
+        </iframe>
+      </div>
+
+      <div class="map-info reveal delay-1">
+        <h2 class="section-title">
+          <span class="heading-line">FIND US IN</span>
+          <span class="heading-line accent">MADIPAKKAM, CHENNAI</span>
+        </h2>
+        <p class="body-text">We're right in the heart of Madipakkam — easy to find, impossible to ignore. Come see why Chennai trains with us.</p>
+
+        <ul class="contact-details">
+          <li>
+            <span class="ci-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+            <a href="https://maps.app.goo.gl/bhYeJLc83j6dCyL79" target="_blank">33/4, Madipakkam Koot Road, Medavakkam Main Rd, Madipakkam, Chennai, Tamil Nadu 600091</a>
+          </li>
+          <li>
+            <span class="ci-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm.5 15H11v-6h1.5V17zm0-8H11V7h1.5v2z"/></svg></span>
+            Mon–Sat: 5:30 AM – 10:00 PM | Sun: 6:00 AM – 1:00 PM
+          </li>
+          <li>
+            <span class="ci-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></span>
+            <a href="tel:+919360424768">+91 93604 24768</a>
+          </li>
+        </ul>
+
+        <a href="https://maps.app.goo.gl/bhYeJLc83j6dCyL79" target="_blank" class="btn-primary mt-24">Get Directions on Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 10 — CONTACT / FREE TRIAL FORM
+  ============================================================ -->
+  <section id="contact" class="section-contact section-pad">
+    <div class="container">
+      <h2 class="section-title center reveal">
+        CLAIM YOUR <span class="accent">FREE TRIAL TODAY</span>
+      </h2>
+      <p class="sub-center reveal">Fill in your details and we will call you within 2 hours to confirm your slot.</p>
+
+      <div class="contact-grid reveal">
+        <!-- Prefer to call box -->
+        <div class="contact-left">
+          <div class="call-box">
+            <h3>Prefer To Call</h3>
+            <p>Speak directly with our team. We're available during training hours.</p>
+            <a href="tel:+919360424768" class="btn-dark">+91 93604 24768</a>
+          </div>
+
+          <div class="call-box-location">
+            <h4>Our Location</h4>
+            <div class="loc-row">
+              <span class="ci-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+              <div>
+                <strong>Madipakkam</strong>
+                <p><a href="https://maps.app.goo.gl/bhYeJLc83j6dCyL79" target="_blank">33/4, Madipakkam Koot Road, Medavakkam Main Rd, Madipakkam, Chennai, Tamil Nadu 600091</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lead form -->
+        <div class="form-box">
+          <h3>Request a Callback</h3>
+          <p>Fill out the form and we'll call you within 2 hours.</p>
+          <div class="form-inner" id="leadForm">
+            <div class="field-group">
+              <label for="fname">Name*</label>
+              <input type="text" id="fname" placeholder="Enter Your Name" required />
+            </div>
+            <div class="field-group">
+              <label for="fphone">Phone Number *</label>
+              <input type="tel" id="fphone" placeholder="Enter Your Phone Number" required />
+            </div>
+            <div class="field-group">
+              <label for="ftiming">Preferred Timing*</label>
+              <select id="ftiming" required>
+                <option value="" disabled selected>Timing</option>
+                <option>5:30 AM – 7:00 AM</option>
+                <option>7:00 AM – 9:00 AM</option>
+                <option>9:00 AM – 11:00 AM</option>
+                <option>4:00 PM – 6:00 PM</option>
+                <option>6:00 PM – 8:00 PM</option>
+                <option>8:00 PM – 10:00 PM</option>
+              </select>
+            </div>
+            <button type="button" class="btn-primary" id="submitBtn">Book My Free Trial</button>
+          </div>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <div class="success-icon">✓</div>
+            <h4>We'll call you shortly!</h4>
+            <p>Your free trial slot request has been received. Our team will confirm within 2 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo" aria-label="Atom Fitness">
+          <img src="assets/Logo.png" alt="Atom Fitness Logo" loading="lazy" />
+        </a>
+        <p>At Atom Fitness, we believe fitness isn't a phase — it's a lifestyle. Our Madipakkam gym is built for every level, from first-timers to seasoned athletes. Come for the equipment. Stay for the results.</p>
+      </div>
+
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#programs">Programs</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-contact">
+        <h5>Contact</h5>
+        <p><a href="https://maps.app.goo.gl/bhYeJLc83j6dCyL79" target="_blank">33/4, Madipakkam Koot Road, Medavakkam Main Rd, Madipakkam, Chennai, Tamil Nadu 600091</a></p>
+        <p><a href="tel:+919360424768">+91 93604 24768</a></p>
+      </div>
+
+      <div class="footer-social">
+        <h5>Social Media</h5>
+        <a href="https://www.instagram.com/atomfitness.madipakkam/" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>2026 Atom Fitness – All Rights Reserved.</span>
+      <span>Marketed By Profitcast — Efficient growth, delivered.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
