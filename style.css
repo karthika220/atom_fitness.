@@ -106,6 +106,7 @@ a { text-decoration: none; color: inherit; }
    BUTTONS
 ============================================================ */
 .btn-primary {
+  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -115,7 +116,9 @@ a { text-decoration: none; color: inherit; }
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.01em;
-  padding: 12px 14px;
+  min-height: var(--btn-height);
+  height: var(--btn-height);
+  padding: 0 var(--btn-padding-x);
   border-radius: var(--radius);
   border: none;
   cursor: pointer;
@@ -123,7 +126,6 @@ a { text-decoration: none; color: inherit; }
   text-transform: none;
   line-height: 1;
   white-space: nowrap;
-  text-transform: none;
 }
 .btn-primary:hover {
   background: #e6ac00;
@@ -132,6 +134,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .btn-dark {
+  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -141,7 +144,9 @@ a { text-decoration: none; color: inherit; }
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.01em;
-  padding: 12px 10px;
+  min-height: var(--btn-height);
+  height: var(--btn-height);
+  padding: 0 var(--btn-padding-x);
   border-radius: var(--radius);
   border: 2px solid var(--white);
   cursor: pointer;
@@ -149,7 +154,6 @@ a { text-decoration: none; color: inherit; }
   text-transform: none;
   line-height: 1;
   white-space: nowrap;
-  text-transform: none;
 }
 .btn-dark:hover {
   background: var(--white);
@@ -255,11 +259,17 @@ a { text-decoration: none; color: inherit; }
 .nav-actions { display: flex; align-items: center; gap: 12px; margin-left: 24px; }
 
 .btn-whatsapp {
-  width: 42px; height: 42px;
+  box-sizing: border-box;
+  width: var(--btn-height);
+  height: var(--btn-height);
+  min-width: var(--btn-height);
+  flex-shrink: 0;
   background: #25d366;
   color: #fff;
   border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform var(--transition);
 }
 .btn-whatsapp:hover { transform: scale(1.1); }
@@ -464,16 +474,7 @@ a { text-decoration: none; color: inherit; }
 }
 .section-about .heading-line { display: block; }
 .section-about .heading-line { white-space: nowrap; }
-.section-about .about-btn {
-  width: 250px;
-  height: 64px;
-  padding: 0 28px;
-  text-transform: none;
-  font-size: 1.15rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  line-height: 1;
-}
+/* about-btn inherits .btn-primary size, just override text if needed */
 
 /* Zig-zag offsets for image grid */
 .img-grid-4 img:nth-child(1) { --y: -20px; transform: translateY(-20px); }
@@ -1092,9 +1093,7 @@ a { text-decoration: none; color: inherit; }
 .field-group select option { background: #1a1a1a; }
 
 .section-contact #submitBtn {
-  height: 52px;
-  padding: 0 20px;
-  font-size: 0.95rem;
+  /* Already inherits from .btn-primary */
   align-self: flex-start;
   width: auto;
 }
@@ -1253,11 +1252,7 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 44px;
 }
 
-.thankyou-btn {
-  min-width: 140px;
-  height: 46px;
-  padding: 0 16px;
-}
+/* thankyou-btn inherits unified size from .btn-primary */
 
 /* ============================================================
    SCROLL REVEAL ANIMATIONS
@@ -1314,7 +1309,7 @@ a { text-decoration: none; color: inherit; }
   .call-box-location h4 { font-size: 1.35rem; }
   .loc-row strong { font-size: 1rem; }
   .loc-row p { font-size: 0.95rem; max-width: none; }
-  .section-contact #submitBtn { height: 48px; font-size: 0.9rem; }
+  /* submitBtn keeps same size on mobile */
   .section-pad { padding: 72px 0; }
 }
 
