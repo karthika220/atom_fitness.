@@ -1294,6 +1294,7 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 600px) {
   :root { --section-inline: 16px; }
   .section-title { font-size: 38px; line-height: 40px; }
+  .section-ticker { padding: 16px 0; }
   .ticker-inner { animation-duration: 24s; gap: 64px; }
   .ticker-inner span { font-size: 1.6rem; letter-spacing: 0.06em; }
   .hero-sub br { display: none; }
@@ -1318,11 +1319,26 @@ a { text-decoration: none; color: inherit; }
     padding-bottom: 0;
   }
   .hero-title { margin-bottom: 14px; }
-  .hero-sub { font-size: 1.05rem; }
-  .hero-sub { margin-bottom: 22px; }
+  .hero-sub { font-size: 0.93rem; }
+  .hero-sub { margin-bottom: 20px; }
+  .section-hero .btn-primary {
+    height: 48px;
+    min-height: 48px;
+    padding: 0 18px;
+    font-size: 0.92rem;
+  }
   .section-about .section-title {
     font-size: 34px;
     line-height: 36px;
+  }
+  .section-about .body-text { font-size: 0.98rem; }
+  .section-about .check-list strong { font-size: 1.24rem; }
+  .section-about .check-list p { font-size: 1rem; }
+  .section-about .about-btn {
+    height: 48px;
+    min-height: 48px;
+    padding: 0 18px;
+    font-size: 0.92rem;
   }
   .section-about .heading-line { white-space: nowrap; }
   .img-grid-4 {
