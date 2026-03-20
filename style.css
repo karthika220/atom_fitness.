@@ -1319,7 +1319,7 @@ a { text-decoration: none; color: inherit; }
     padding-bottom: 0;
   }
   .hero-title { margin-bottom: 14px; }
-  .hero-sub { font-size: 0.93rem; }
+  .hero-sub { font-size: calc(0.93rem - 1px); }
   .hero-sub { margin-bottom: 20px; }
   .section-hero .btn-primary {
     height: 48px;
@@ -1331,7 +1331,7 @@ a { text-decoration: none; color: inherit; }
     font-size: 34px;
     line-height: 36px;
   }
-  .section-about .body-text { font-size: 0.98rem; }
+  .section-about .body-text { font-size: calc(0.98rem - 1px); }
   .section-about .check-list strong { font-size: 1.24rem; }
   .section-about .check-list p { font-size: 1rem; }
   .section-about .about-btn {
