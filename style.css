@@ -114,7 +114,7 @@ a { text-decoration: none; color: inherit; }
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 500;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.01em;
   padding: 12px 14px;
   border-radius: var(--radius);
   border: none;
@@ -140,7 +140,7 @@ a { text-decoration: none; color: inherit; }
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 500;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
   padding: 12px 10px;
   border-radius: var(--radius);
   border: 2px solid var(--white);
@@ -400,17 +400,17 @@ a { text-decoration: none; color: inherit; }
 .ticker-inner {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 88px;
   white-space: nowrap;
   width: max-content;
-  animation: ticker 12s linear infinite;
+  animation: ticker 35s linear infinite;
 }
 
 .ticker-inner span {
   font-family: var(--font);
   font-size: 2.4rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #191919;
   -webkit-text-stroke: 0;
@@ -889,15 +889,28 @@ a { text-decoration: none; color: inherit; }
   font-weight: 300;
   line-height: 1.55;
 }
+.contact-details li > a,
+.contact-details li > span:not(.ci-icon) {
+  flex: 1;
+  min-width: 0;
+  padding-top: 4px;
+}
 
 .ci-icon {
   flex-shrink: 0;
-  width: 32px; height: 32px;
+  width: 38px;
+  height: 38px;
   background: var(--secondary);
   color: var(--white);
   border-radius: 0;
-  display: flex; align-items: center; justify-content: center;
-  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  align-self: flex-start;
+}
+.section-map .ci-icon svg {
+  filter: brightness(0) invert(1);
 }
 
 /* ============================================================
@@ -945,9 +958,10 @@ a { text-decoration: none; color: inherit; }
 
 .call-box h3 {
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 700 !important;
   margin-bottom: 12px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
+  color: var(--white) !important;
 }
 .call-box p {
   font-size: 1rem;
@@ -973,7 +987,7 @@ a { text-decoration: none; color: inherit; }
 
 .loc-row {
   display: flex;
-  gap: 12px;
+  gap: 14px;
   align-items: flex-start;
 }
 .loc-row .ci-icon {
@@ -983,11 +997,21 @@ a { text-decoration: none; color: inherit; }
   background: var(--secondary);
   color: var(--white);
   flex-shrink: 0;
+  margin-top: 0;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loc-row > div {
+  flex: 1;
+  min-width: 0;
+  padding-top: 4px;
 }
 .loc-row strong {
   display: block;
   font-size: 1.1rem;
-  line-height: 1.1;
+  line-height: 1.25;
   margin-bottom: 6px;
   color: var(--white);
 }
@@ -996,6 +1020,10 @@ a { text-decoration: none; color: inherit; }
   color: var(--white);
   line-height: 1.55;
   max-width: 520px;
+  margin: 0;
+}
+.loc-row p a {
+  display: inline;
 }
 
 /* Form box */
@@ -1293,8 +1321,8 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 600px) {
   .container { padding: 0 16px; }
   .section-title { font-size: 38px; line-height: 40px; }
-  .ticker-inner { animation-duration: 16s; }
-  .ticker-inner span { font-size: 1.6rem; letter-spacing: 0.08em; }
+  .ticker-inner { animation-duration: 24s; gap: 64px; }
+  .ticker-inner span { font-size: 1.6rem; letter-spacing: 0.06em; }
   .hero-sub br { display: none; }
   .hero-title {
     font-size: 2.35rem;
