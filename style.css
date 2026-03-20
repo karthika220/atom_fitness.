@@ -14,6 +14,9 @@
   --font-body:  'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   --transition: 0.35s cubic-bezier(.4,0,.2,1);
   --radius:     4px;
+  --btn-height: 52px;
+  --btn-padding-x: 22px;
+  --section-inline: 24px;
 }
 
 html { scroll-behavior: smooth; }
@@ -51,7 +54,7 @@ a { text-decoration: none; color: inherit; }
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 var(--section-inline);
 }
 
 /* Keep FAQ and Reviews at the previous section width */
@@ -60,12 +63,11 @@ a { text-decoration: none; color: inherit; }
   max-width: 1200px;
 }
 
-/* Match section content start with logo alignment in header */
 @media (min-width: 1024px) {
-  .container { padding-left: 140px; padding-right: 28px; } /* 160 - 20 logo shift */
+  :root { --section-inline: 48px; }
 }
 @media (min-width: 1280px) {
-  .container { padding-left: 70px; padding-right: 28px; }  /* 200 - 130 logo shift */
+  :root { --section-inline: 64px; }
 }
 
 .section-pad { padding: 100px 0; }
@@ -181,8 +183,8 @@ a { text-decoration: none; color: inherit; }
   box-shadow: 0 4px 16px rgba(252,194,1,.4);
 }
 .float-btn:hover { transform: scale(1.12); box-shadow: 0 8px 28px rgba(252,194,1,.5); }
-.float-left  { left: 28px; }
-.float-right { right: 28px; }
+.float-left  { left: var(--section-inline); }
+.float-right { right: var(--section-inline); }
 
 /* ============================================================
    NAV
@@ -201,24 +203,15 @@ a { text-decoration: none; color: inherit; }
   display: flex;
   align-items: center;
   gap: 40px;
-  padding: 0 28px;
+  padding: 0 var(--section-inline);
   height: 92px;
   max-width: 1400px;
   margin: 0 auto;
 }
 
-/* Align logo with hero content on larger screens */
-@media (min-width: 1024px) {
-  .nav-inner { padding-left: 130px; padding-right: 28px; }
-  .logo { margin-left: -20px; } /* nudge logo slightly left */
-}
-@media (min-width: 1280px) {
-  .nav-inner { padding-left: 170px; padding-right: 28px; }
-  .logo { margin-left: -130px; } /* a touch more on large screens */
-}
-
 /* Logo */
 .logo {
+  margin-left: 0;
   display: inline-flex;
   align-items: center;
   width: 132px;
@@ -298,7 +291,7 @@ a { text-decoration: none; color: inherit; }
   display: none;
   flex-direction: column;
   background: #0a0a0a;
-  padding: 16px 28px 24px;
+  padding: 16px var(--section-inline) 24px;
   gap: 16px;
   border-top: 1px solid #222;
 }
@@ -348,7 +341,7 @@ a { text-decoration: none; color: inherit; }
 .hero-content {
   position: relative;
   z-index: 10;
-  padding: 0 24px;
+  padding: 0 var(--section-inline);
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
@@ -373,14 +366,6 @@ a { text-decoration: none; color: inherit; }
   font-weight: 300;
   margin-bottom: 36px;
   line-height: 1.6;
-}
-
-/* Desktop hero alignment to match design */
-@media (min-width: 1024px) {
-  .hero-content { padding-left: 140px; padding-right: 28px; }
-}
-@media (min-width: 1280px) {
-  .hero-content { padding-left: 70px; padding-right: 28px; }
 }
 
 /* Hero animations */
@@ -1195,7 +1180,7 @@ a { text-decoration: none; color: inherit; }
 
 .footer-bottom {
   border-top: 1px solid #1a1a1a;
-  padding: 22px 24px;
+  padding: 22px var(--section-inline);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1203,12 +1188,6 @@ a { text-decoration: none; color: inherit; }
   color: var(--white);
   max-width: 1400px;
   margin: 0 auto;
-}
-@media (min-width: 1024px) {
-  .footer-bottom { padding-left: 140px; padding-right: 28px; }
-}
-@media (min-width: 1280px) {
-  .footer-bottom { padding-left: 70px; padding-right: 28px; }
 }
 
 /* ============================================================
@@ -1222,7 +1201,7 @@ a { text-decoration: none; color: inherit; }
 .thankyou-wrap {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 130px 24px 40px;
+  padding: 130px var(--section-inline) 40px;
 }
 
 .thankyou-card {
@@ -1273,9 +1252,8 @@ a { text-decoration: none; color: inherit; }
    RESPONSIVE
 ============================================================ */
 @media (max-width: 1024px) {
-  .container { padding: 0 24px; }
   .section-title { font-size: 52px; line-height: 50px; }
-  .hero-content { max-width: 760px; padding: 0 24px; }
+  .hero-content { max-width: 760px; padding: 0 var(--section-inline); }
   .programs-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .faq-wrap { grid-template-columns: 1fr; gap: 40px; }
@@ -1287,7 +1265,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 860px) {
-  .nav-inner { height: 78px; padding: 0 20px; }
+  .nav-inner { height: 78px; padding: 0 var(--section-inline); }
   .logo { margin-left: 0 !important; }
   .logo { width: 104px; }
   .nav-links { display: none; }
@@ -1314,7 +1292,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 600px) {
-  .container { padding: 0 16px; }
+  :root { --section-inline: 16px; }
   .section-title { font-size: 38px; line-height: 40px; }
   .ticker-inner { animation-duration: 24s; gap: 64px; }
   .ticker-inner span { font-size: 1.6rem; letter-spacing: 0.06em; }
@@ -1332,7 +1310,7 @@ a { text-decoration: none; color: inherit; }
     white-space: nowrap;
     word-break: normal;
   }
-  .hero-content { padding: 0 16px; }
+  .hero-content { padding: 0 var(--section-inline); }
   .section-hero {
     height: calc(100vh - 78px);
     min-height: 520px;
@@ -1366,9 +1344,9 @@ a { text-decoration: none; color: inherit; }
   .form-box { padding: 28px 20px; }
   .section-contact .section-title { line-height: 40px; }
   .float-btn { width: 46px; height: 46px; bottom: 16px; }
-  .float-left { left: 16px; }
-  .float-right { right: 16px; }
-  .thankyou-wrap { padding: 102px 12px 24px; }
+  .float-left { left: var(--section-inline); }
+  .float-right { right: var(--section-inline); }
+  .thankyou-wrap { padding: 102px var(--section-inline) 24px; }
   .thankyou-card { min-height: calc(100vh - 130px); }
   .thankyou-title { font-size: clamp(2rem, 9vw, 2.8rem); }
   .thankyou-sub { font-size: 0.95rem; }
