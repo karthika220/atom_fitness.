@@ -1332,8 +1332,8 @@ a { text-decoration: none; color: inherit; }
     line-height: 36px;
   }
   .section-about .body-text { font-size: calc(0.98rem - 1px); }
-  .section-about .check-list strong { font-size: 1.24rem; }
-  .section-about .check-list p { font-size: 1rem; }
+  .section-about .check-list strong { font-size: calc(1.24rem - 1px); }
+  .section-about .check-list p { font-size: calc(1rem - 1px); }
   .section-about .about-btn {
     height: 48px;
     min-height: 48px;
